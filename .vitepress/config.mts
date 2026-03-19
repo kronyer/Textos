@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/textos/',
+  base: '/Textos/',
   lang: 'pt-BR',
   title: "KrTech",
   description: "Computação e Matemática",
