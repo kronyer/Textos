@@ -23,4 +23,4 @@ features:
 ## 🌿 Últimas Notas
 
 - [Encoding vs Hashing](/CSharp/base64andOthers/texto)
-- [Inline Arrays no C# 12/13](/inline_arrays/inline_arrays)
+- [Inline Arrays no C# 12/13](/CSharp/inline_arrays/texto)
