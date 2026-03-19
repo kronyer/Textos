@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{B41BF331-FCCB-2ADF-CDB6-767964B34647}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inline_arrays", "inline_arrays", "{3D8C372A-1173-9236-9E57-B8AA6AC86915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inline_arrays_benchmark", "CSharp\inline_arrays\inline_arrays_benchmark\inline_arrays_benchmark.csproj", "{46D61083-9E7B-E1B1-254F-2C802C2C771D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46D61083-9E7B-E1B1-254F-2C802C2C771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D61083-9E7B-E1B1-254F-2C802C2C771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D61083-9E7B-E1B1-254F-2C802C2C771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D61083-9E7B-E1B1-254F-2C802C2C771D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D8C372A-1173-9236-9E57-B8AA6AC86915} = {B41BF331-FCCB-2ADF-CDB6-767964B34647}
+		{46D61083-9E7B-E1B1-254F-2C802C2C771D} = {3D8C372A-1173-9236-9E57-B8AA6AC86915}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3D09A05-0F1C-48B1-B220-6CFBA52145C9}
+	EndGlobalSection
+EndGlobal
