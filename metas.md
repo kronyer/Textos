@@ -1,8 +1,8 @@
-- [ ] Nunca comparar com Double, e sim com decimal
+- [x] Nunca comparar com Double, e sim com decimal
 - [x] Inline arrays
 - [ ] Jagged arrays vs multidimensional
 - [ ] C# bankers rounding
-- [ ] Base 64, base 64 url, base 62 e outras bases
+- [x] Base 64, base 64 url, base 62 e outras bases
 - [ ] Catch when
 - [ ] Checked overflow
 - [ ] Double e Int dividindo por zero
@@ -13,7 +13,7 @@
 - [ ] Debug tracer e ilogger e os Trace levels
 - [ ] Modificadores de acesso
 - [ ] Aliás, using, podemos renomear qualquer tipo, até tuplas
-- [ ] Enum herdando de byte e podendo ser lista usando |, com a annotation [Flags]
+- [x] Enum herdando de byte e podendo ser lista usando |, com a annotation [Flags]
 - [ ] Usando static, metodos, propriedades, classes
 - [ ] [SetRequiredMembers] para forçar a inicialização de propriedades
 - [ ] Optional parameters, precisa do ? ou não
@@ -27,3 +27,45 @@
 - [ ] Geters, setters, backing fields e partial properties
 - [ ] Definindo indices com this[]
 - [ ] pattern matching com objetos
+- [ ] Records
+  - [ ] usando `with` para criar novos objetos a partir de outros
+  - [ ] record simpler syntax que já cria properties, construtor e deconstructor
+  - [ ] Records nao sao sempre imutaveis (p.363)
+- [ ] Modelando OOP com casamento, + e *, Person, Children, etc
+- [ ] Delegates, functional pointer e currying?
+  - [ ] Events vs delegates
+- [ ] Interfaces:
+  - [ ] Falando sobre interfaces comuns (p.323)
+  - [ ] Implementação implicit vs explicit
+  - [ ] Diferença entre interface e classe abstrata
+- [ ] Nullable value types, isso vem de FP?
+- [ ] Usando is null, nao o == null, para evitar problemas de sobrecarga de operadores
+- [ ] ThrowIfNull e o `!!` operator
+- [ ] Hiding vs overriding
+- [ ] `sealed` em classes e metodos
+- [ ] Polimorfismo
+- [ ] Checar p.354
+- [ ] Casting com as, retorna null quando falha?
+- [ ] Extension methods quando nao da pra herdar
+- [ ] Return `this` para permitir chaining, fluent style, isso é semelhabnte a FP com monads?
+- [ ] Deconstructor vs deconstruct
+
+# Db
+- [ ]
+
+
+# Math
+- [ ] Polinomials are vectores?
+- [ ] Groups, abelian spaces with +
+- [ ] Sistemas lineares são matrizes multiplicando vetores que resultam em um vetor resultado
+- [ ] Matriz inversa, A⁻¹ * A = I
+  - [ ] É comutativa AB = I = BA
+  - [ ] Casos notaveis
+    - [ ] (AB)⁻¹ = B⁻¹A⁻¹
+    - [ ] (A + B)⁻¹ != A⁻¹ + B⁻¹
+    - [ ] (A^t)^t = A
+    - [ ] (AB)^t = B^t A^t
+    - [ ] (A+B)^t = A^t + B^t
+  - [ ] Simetricas se A^t = A
+    - [ ] Se A é invertivel, entao A^t também é
+    - [ ] (A⁻¹)^t = (A^t)⁻¹ := A⁻^t
