@@ -1,9 +1,9 @@
 - [x] Nunca comparar com Double, e sim com decimal
 - [x] Inline arrays
-- [ ] Jagged arrays vs multidimensional
-- [ ] C# bankers rounding
+- [X] Jagged arrays vs multidimensional
+- [x] C# bankers rounding
 - [x] Base 64, base 64 url, base 62 e outras bases
-- [ ] Catch when
+- [x] Catch when
 - [ ] Checked overflow
 - [ ] Double e Int dividindo por zero
 - [ ] Break continue e return
@@ -49,9 +49,20 @@
 - [ ] Extension methods quando nao da pra herdar
 - [ ] Return `this` para permitir chaining, fluent style, isso é semelhabnte a FP com monads?
 - [ ] Deconstructor vs deconstruct
+- [ ] Late binding, como fica o código em IL
+- [ ] Quadrado não deve herdar de shape, mas sim de retangulo
+- [ ] Native sized int
+- [ ] System runtime dll nao tem types, so types forward
+- [ ] FDD FDE e self contained apps
+  - [ ] Single file app sem self contained: `dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained false`
+- [ ] Trim no publish
+- [ ] Build props use artifacts
+- [ ] Native aot
+- [ ] Method interceptors e a geração de migrations (?)
 
 # Db
-- [ ]
+- [ ] cursor, exec sql em c puro
+- [ ] ODMS
 
 
 # Math
