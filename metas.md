@@ -4,11 +4,11 @@
 - [x] C# bankers rounding
 - [x] Base 64, base 64 url, base 62 e outras bases
 - [x] Catch when
-- [ ] Checked overflow
-- [ ] Double e Int dividindo por zero
+- [x] Checked overflow
+- [X] Double e Int dividindo por zero
 - [ ] Break continue e return
 - [ ] Partial functions na program, program.test.cs para evitar que com top level statements as funções dentro da program virem local functions
-- [ ] Documentar funções xml
+- [X] Documentar funções xml
 - [ ] Test doer e try patrern
 - [ ] Debug tracer e ilogger e os Trace levels
 - [ ] Modificadores de acesso
@@ -59,24 +59,48 @@
 - [ ] Build props use artifacts
 - [ ] Native aot
 - [ ] Method interceptors e a geração de migrations (?)
+- [ ] IList<T> [DefaultMember]
+- [ ] Arrays são melhores que listas, usar quando o tamanho é conhecido, ou converter para array depois de operar com a lista
+- [ ] Dictionary
+  - [ ] KeyValue<TKey, TValue> e KeyValuePair<TKey, TValue>?? 
+  - [ ] Dictionary ou hashset?
+- [ ] Sets
+  - [ ] Metodos de set
+- [ ] Stack e Queue e priority queue
+- [ ] Sorted collections
+- [ ] AsReadOnly
+- [ ] ToImmutableDicitionary, ToImmutableList, etc
+- [ ] Frozen collections - FrozenDictionary
+- [ ] Spread operator (..)
+- [ ] IEnumerable como argumento de métodos é lento, usar List
+- [ ] Nao retornar null em collections, retornar o .Empty relativo
+- [ ] p489 span para arrays
+- [ ] `Index` e `Range` para acessar partes de arrays
+  - [ ] p.492 ReadonlySpan<char> foreach Range r in text.split
+- [ ] Strings
+  - [ ] Qual o tamanho maximo de bytes de uma string? 
+  - [ ] SecureString
+  - [ ] Span<char> para manipular strings sem criar novas instancias
+  - [ ] Trabalhando com files
+    - [ ] Streams - File, memory, network
+    - [ ] GZip vs Brotli
+- [ ] ASCII, ANSII, ISO e os UTC e UTF
+- [ ] Como funciona um Hashet de objetos, o que é um hash code, como funciona o GetHashCode e Equals
+- [ ] Serializando XML, usando [XMLAttribute]
+- [ ] Serializando Json, JsonIgnore, JsonInclude
 
 # Db
 - [ ] cursor, exec sql em c puro
 - [ ] ODMS
 
 
-# Math
-- [ ] Polinomials are vectores?
-- [ ] Groups, abelian spaces with +
-- [ ] Sistemas lineares são matrizes multiplicando vetores que resultam em um vetor resultado
-- [ ] Matriz inversa, A⁻¹ * A = I
-  - [ ] É comutativa AB = I = BA
-  - [ ] Casos notaveis
-    - [ ] (AB)⁻¹ = B⁻¹A⁻¹
-    - [ ] (A + B)⁻¹ != A⁻¹ + B⁻¹
-    - [ ] (A^t)^t = A
-    - [ ] (AB)^t = B^t A^t
-    - [ ] (A+B)^t = A^t + B^t
-  - [ ] Simetricas se A^t = A
-    - [ ] Se A é invertivel, entao A^t também é
-    - [ ] (A⁻¹)^t = (A^t)⁻¹ := A⁻^t
+# Calc
+- [ ] Provar continuidade por $\epsilon-\delta$ 
+- [ ] Limites vs continuidade
+- [ ] Unicidade do limite
+- [ ] Limite pode estar fora do dominio da função
+
+# AL
+- [ ] $A = LU$ ?
+- [ ] Metodo gauss jordan para resolver sistemas lineares
+- [ ] 

@@ -1,0 +1,10 @@
+- [ ] Principios, Padrões e Práticas Ageis em c#
+- [ ] C# 13 and .NET 9 Modern Cross-Platform Development
+- [ ] C# 12 in a Nutshell
+- [ ] C# in Depth
+- [ ] Effective C# - 50 Specific Ways to Improve Your C#
+- [ ] Functional C#
+- [ ] Functional Programming in C# 
+- [ ] CLR via C#
+- [ ] Metaprogramming in .NET
+- [ ] LINQ to Objects using C# 4.0

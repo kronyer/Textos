@@ -38,3 +38,20 @@ Span é o construtor, span é o resultado de todas as combinações possiveis qu
 Essa é a parte interessante. O span pode ser "menor" que o espaço original ou "igual" a ele:
 * Subespaço Próprio: Se você está no $\mathbb{R}^3$ (espaço 3D) e faz o $span$ de apenas 2 vetores (L.I.), você gera um plano. Esse plano é um subespaço, mas não é o espaço $\mathbb{R}^3$ inteiro.
 * O Espaço Inteiro: Se você pegar 3 vetores que não estão no mesmo plano (L.I.) no $\mathbb{R}^3$, o $span$ deles vai preencher todo o "universo" 3D. Nesse caso, o subespaço gerado coincide com o próprio espaço vetorial.
+
+
+
+
+# Espaco e base
+
+o espaco vetorial V é definido por um span de vetor?
+
+E sobre a dimensão do espaço? O que é a dimensão de um espaço vetorial?
+
+Como descobrir a base de um subspaco U = span{x1, ... xm}?
+Montar o row-echelon form da matriz cujas colunas são os vetores x1, ... xm. Os vetores correspondentes às colunas pivô formam uma base para U. A dimensão de U é o número de vetores nessa base.
+Só as colunas com pivô são linearmente independentes, e elas formam a base do subespaço gerado pelos vetores originais. 
+
+A dimensão é o número de vetores na base, ou seja, o número de colunas pivô. 
+
+O rank é o mesmo conceito de uma perspectiva dimensional, ou seja, em dimensão pensamos no espaço, e em rank pensamos na matriz. 
