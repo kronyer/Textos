@@ -1,5 +1,6 @@
-- [ ] Principios, Padrões e Práticas Ageis em c#
+- [X] Principios, Padrões e Práticas Ageis em c#
 - [ ] C# 13 and .NET 9 Modern Cross-Platform Development
+- [ ] Apps and Services with .NET 8
 - [ ] C# 12 in a Nutshell
 - [ ] C# in Depth
 - [ ] Effective C# - 50 Specific Ways to Improve Your C#

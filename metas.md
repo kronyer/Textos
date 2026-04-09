@@ -95,10 +95,10 @@
 
 
 # Calc
-- [ ] Provar continuidade por $\epsilon-\delta$ 
-- [ ] Limites vs continuidade
+- [x] Provar continuidade por $\epsilon-\delta$ 
+- [x] Limites vs continuidade
 - [ ] Unicidade do limite
-- [ ] Limite pode estar fora do dominio da função
+- [x] Limite pode estar fora do dominio da função
 
 # AL
 - [ ] $A = LU$ ?
