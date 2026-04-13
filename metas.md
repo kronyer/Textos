@@ -6,17 +6,17 @@
 - [x] Catch when
 - [x] Checked overflow
 - [X] Double e Int dividindo por zero
-- [ ] Break continue e return
+- [x] Break continue e return
 - [ ] Partial functions na program, program.test.cs para evitar que com top level statements as funções dentro da program virem local functions
 - [X] Documentar funções xml
-- [ ] Test doer e try patrern
+- [x] Test doer e try patrern
 - [ ] Debug tracer e ilogger e os Trace levels
-- [ ] Modificadores de acesso
-- [ ] Aliás, using, podemos renomear qualquer tipo, até tuplas
+- [x] Modificadores de acesso
+- [x] Aliás, using, podemos renomear qualquer tipo, até tuplas
 - [x] Enum herdando de byte e podendo ser lista usando |, com a annotation [Flags]
 - [ ] Usando static, metodos, propriedades, classes
 - [ ] [SetRequiredMembers] para forçar a inicialização de propriedades
-- [ ] Optional parameters, precisa do ? ou não
+- [x] Optional parameters, precisa do ? ou não
 - [ ] Passagem de parametros, value, out ref e in
 - [ ] Params keyword, permitindo qualquer collection
 - [ ] Ref returns
@@ -103,4 +103,13 @@
 # AL
 - [ ] $A = LU$ ?
 - [ ] Metodo gauss jordan para resolver sistemas lineares
-- [ ] 
+
+# Estatistica
+- [ ] Bayes
+- [ ] Binomio de Newton
+- [ ] Distribuições
+  - [ ] Normal
+  - [ ] Binomial
+  - [ ] Poisson
+  - [ ] Exponencial
+  - [ ] Uniforme
