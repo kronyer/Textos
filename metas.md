@@ -113,3 +113,32 @@
   - [ ] Poisson
   - [ ] Exponencial
   - [ ] Uniforme
+
+# Outros
+
+### 1. Algoritmos de String (Fuzzy)
+- [ ] **Distância de Levenshtein**: Entender a matriz de custo e implementação via Programação Dinâmica.
+- [ ] **Distância de Jaro-Winkler**: Diferença entre Levenshtein e métricas que priorizam prefixos.
+- [ ] **Damerau-Levenshtein**: Como lidar com a transposição de caracteres adjacentes (ex: "te" vira "et").
+
+### 2. Fonética Computacional
+- [ ] **Soundex**: Estudo do algoritmo base e por que ele falha com nomes estrangeiros e vogais.
+- [ ] **Metaphone**: Regras de transformação de grupos de letras em fonemas únicos.
+- [ ] **Adaptação PT-BR**: Estudar regras específicas do português para "R/H" inicial, "S/Ç/Z" e "LH/NH".
+- [ ] **Double Metaphone**: Implementação de chaves fonéticas duplas (primária e alternativa).
+
+### 3. Recuperação de Informação (IR) Clássica
+- [ ] **N-Grams / Trigramas**: Decomposição de strings em pedaços menores para busca parcial.
+- [ ] **Inverted Index (Índice Invertido)**: A estrutura de dados fundamental por trás de motores de busca.
+- [ ] **TF-IDF**: Entender como a frequência de um termo define a relevância do resultado.
+
+### 4. Persistência e Otimização (PostgreSQL)
+- [ ] **Extensão pg_trgm**: Como o banco usa trigramas para acelerar o operador `LIKE`.
+- [ ] **Extensão fuzzystrmatch**: Uso prático das funções nativas e limitações de performance.
+- [ ] **Índices GIN vs GiST**: Quando usar cada um para buscas de texto e trigramas.
+- [ ] **Estratégia de Fallback**: Lógica de cascata (Match Exato -> Prefixo -> Fonético -> Fuzzy).
+
+### 5. Avaliação de Qualidade
+- [ ] **Precision (Precisão)**: Proporção de resultados relevantes entre os recuperados.
+- [ ] **Recall (Revocação)**: Proporção de resultados relevantes recuperados em relação ao total existente.
+- [ ] **F1-Score**: A média harmônica entre precisão e revocação.
