@@ -50,3 +50,13 @@ $$\begin{bmatrix} -1 & 0 \\ 0 & 2 \end{bmatrix} \begin{bmatrix}
 \end{bmatrix} = \begin{bmatrix}
     -1x \\ 2 y
 \end{bmatrix}$$
+
+
+Matrizes diagonais facilitam muito, pricipalmente se aplicarmos, por exemplo, a matriz $A$ várias vezes em um vetor $\vec{v}$, ou seja, calcular $A^n \vec{v}$. Se $A$ estiver na forma diagonal, isso se torna simplesmente uma questão de escalar cada componente do vetor $\vec{v}$ pelos autovalores correspondentes, elevados à potência $n$.
+
+### Mudança de base
+Se temos uma matriz $A$ e queremos encontrar uma base de autovetores, podemos usar a matriz de autovetores para realizar uma mudança de base. A ideia é encontrar uma matriz $P$ cujas colunas sejam os autovetores de $A$. Então, podemos expressar $A$ na nova base usando a fórmula:
+$$P^{-1}AP = D$$
+Onde $D$ é a matriz diagonal contendo os autovalores de $A$.
+
+Isso é util em um cenário onde precisamos multiplicar essa matriz $A$ por um vetor $\vec{v}$ várias vezes, ou seja, calcular $A^n \vec{v}$. Se $A$ estiver na forma diagonal, isso se torna simplesmente uma questão de escalar cada componente do vetor $\vec{v}$ pelos autovalores correspondentes, elevados à potência $n$.
