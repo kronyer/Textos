@@ -28,3 +28,20 @@ O tipo `decimal` não é um tipo primitivo, mas é uma struct.
 O tipo `BigInteger` é uma struct que representa um número inteiro de precisão arbitrária. Ele é útil para trabalhar com números inteiros muito grandes que não podem ser representados pelos tipos primitivos como `int` ou `long`. O `BigInteger` é parte do namespace `System.Numerics` e pode ser usado para realizar operações matemáticas em números inteiros de qualquer tamanho, sem se preocupar com estouros de capacidade.
 
 # Checando o código IL
+
+```cs
+int idade = 25;
+long populacao = 8000000000;
+float temperatura = 36.5f;
+nint ponteiro = 0;
+```
+
+Vira:
+```
+.locals init (
+    [0] int32 idade,        // O 'int' virou int32
+    [1] int64 populacao,    // O 'long' virou int64
+    [2] float32 temperatura, // O 'float' virou float32
+    [3] native int ponteiro // O 'nint' virou native int
+)
+```

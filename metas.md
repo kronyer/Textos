@@ -1,7 +1,7 @@
 - [x] Nunca comparar com Double, e sim com decimal
 - [x] Inline arrays
 - [X] Jagged arrays vs multidimensional
-- [ ] Tipos primitivos e seus wrappers, como int e Int32, string e String, etc - Em IL
+- [x] Tipos primitivos e seus wrappers, como int e Int32, string e String, etc - Em IL
 - [x] C# bankers rounding
 - [x] Base 64, base 64 url, base 62 e outras bases
 - [x] Catch when
@@ -17,7 +17,7 @@
 - [x] Aliás, using, podemos renomear qualquer tipo, até tuplas
 - [x] Enum herdando de byte e podendo ser lista usando |, com a annotation [Flags]
 - [x] Usando static, metodos, propriedades, classes
-- [ ] [SetRequiredMembers] para forçar a inicialização de propriedades
+- [x] [SetRequiredMembers] para forçar a inicialização de propriedades
 - [x] Optional parameters, precisa do ? ou não
 - [x] Passagem de parametros, value, out ref e in
 - [x] Params keyword, permitindo qualquer collection
@@ -30,18 +30,18 @@
 - [ ] ~~Geters, setters, backing fields e partial properties~~
 - [x] Definindo indices com this[]
 - [x] pattern matching com objetos
-- [ ] Records
-  - [ ] usando `with` para criar novos objetos a partir de outros
-  - [ ] record simpler syntax que já cria properties, construtor e deconstructor
-  - [ ] Records nao sao sempre imutaveis (p.363)
-- [ ] Modelando OOP com casamento, + e *, Person, Children, etc
+- [x] Records
+  - [x] usando `with` para criar novos objetos a partir de outros
+  - [x] record simpler syntax que já cria properties, construtor e deconstructor
+  - [x] Records nao sao sempre imutaveis (p.363)
+- [x] Modelando OOP com casamento, + e *, Person, Children, etc
 - [ ] Delegates, functional pointer e currying?
   - [ ] Events vs delegates
 - [ ] Interfaces:
   - [ ] Falando sobre interfaces comuns (p.323)
   - [ ] Implementação implicit vs explicit
   - [ ] Diferença entre interface e classe abstrata
-- [ ] Nullable value types, isso vem de FP?
+- [x] Nullable value types, isso vem de FP?
 - [ ] Usando is null, nao o == null, para evitar problemas de sobrecarga de operadores
 - [ ] ThrowIfNull e o `!!` operator
 - [x] Hiding vs overriding
@@ -91,7 +91,6 @@
 - [ ] Como funciona um Hashet de objetos, o que é um hash code, como funciona o GetHashCode e Equals
 - [ ] Serializando XML, usando [XMLAttribute]
 - [ ] Serializando Json, JsonIgnore, JsonInclude
-- [ ] Int eh um wrapper
 - [ ] bypass de private ao passar por referencia no construtor, isso é um problema?
 - [ ] streaming xml documents, event based processing
 - [ ] xml schema, xml dtd
@@ -141,6 +140,26 @@
 - [ ] .MCP.json do learn microsoft
 - [ ] How is this website so fast? p.66
 - [ ] WCF
+- [ ] Todo arquivo tem build actions
+- [ ] Orioertues configurations e services(?)
+- [ ] UseMihrarionendpoint
+- [ ] Environments c#
+- [ ] Controller class e controller base class
+- [ ] Middleware temp data, 307 redirect
+- [ ] ConfigureServices para isolar DI
+- [ ] Anti forgery token
+- [ ] Method spoofing para html forms no mvc
+- [ ] Thread pool e async
+- [ ] Get e o limite da query 1000 chars
+- [ ] Vários tipo de distributed cache, swl server, redis, ncache e até um proprio
+  - [ ] Config cache p.180
+  - [ ] HttpCache e cacheControl p.237
+  - [ ] Hybrid cache
+- [ ] Cookies config p.214
+- [ ] Jwt sao self-contained, se veio no token posso confiar
+- [ ] IAuthorization, IResource, IAction, IException, filters
+- [ ] Auth0
+- [ ] Como funciona um CDN e como usar
 
 # Db
 - [ ] cursor, exec sql em c puro
