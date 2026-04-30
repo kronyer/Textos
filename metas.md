@@ -42,10 +42,10 @@
   - [ ] Implementação implicit vs explicit
   - [ ] Diferença entre interface e classe abstrata
 - [x] Nullable value types, isso vem de FP?
-- [ ] Usando is null, nao o == null, para evitar problemas de sobrecarga de operadores
-- [ ] ThrowIfNull e o `!!` operator
+- [x] Usando is null, nao o == null, para evitar problemas de sobrecarga de operadores
+- [x] ThrowIfNull e o `!!` operator
 - [x] Hiding vs overriding
-- [ ] `sealed` em classes e metodos
+- [x] `sealed` em classes e metodos
 - [ ] Polimorfismo
 - [ ] Checar p.354
 - [ ] Casting com as, retorna null quando falha?
