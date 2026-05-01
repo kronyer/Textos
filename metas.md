@@ -46,12 +46,12 @@
 - [x] ThrowIfNull e o `!!` operator
 - [x] Hiding vs overriding
 - [x] `sealed` em classes e metodos
-- [ ] Polimorfismo
+- [X] Polimorfismo
 - [ ] Checar p.354
-- [ ] Casting com as, retorna null quando falha?
+- [X] Casting com as, retorna null quando falha?
 - [ ] Extension methods quando nao da pra herdar
 - [ ] Return `this` para permitir chaining, fluent style, isso é semelhabnte a FP com monads?
-- [ ] Deconstructor vs deconstruct
+- [X] Deconstructor vs deconstruct
 - [ ] Late binding, como fica o código em IL
 - [ ] Quadrado não deve herdar de shape, mas sim de retangulo
 - [ ] Native sized int
