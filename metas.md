@@ -52,9 +52,9 @@
 - [ ] Extension methods quando nao da pra herdar
 - [ ] Return `this` para permitir chaining, fluent style, isso é semelhabnte a FP com monads?
 - [X] Deconstructor vs deconstruct
-- [ ] Late binding, como fica o código em IL
+- [ ] ~~Late binding, como fica o código em IL~~
 - [ ] Quadrado não deve herdar de shape, mas sim de retangulo
-- [ ] Native sized int
+- [ ] ~~Native sized int~~
 - [ ] System runtime dll nao tem types, so types forward
 - [ ] FDD FDE e self contained apps
   - [ ] Single file app sem self contained: `dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained false`
@@ -71,9 +71,9 @@
   - [ ] Metodos de set
 - [X] Stack e Queue e priority queue
 - [X] Sorted collections
-- [ ] AsReadOnly
+- [x] AsReadOnly
 - [X] ToImmutableDicitionary, ToImmutableList, etc
-- [ ] Frozen collections - FrozenDictionary
+- [x] Frozen collections - FrozenDictionary
 - [ ] Spread operator (..)
 - [ ] IEnumerable como argumento de métodos é lento, usar List
 - [ ] Nao retornar null em collections, retornar o .Empty relativo
@@ -84,10 +84,12 @@
   - [ ] Qual o tamanho maximo de bytes de uma string? 
   - [ ] SecureString
   - [ ] Span<char> para manipular strings sem criar novas instancias
-  - [ ] Trabalhando com files
-    - [ ] Streams - File, memory, network
-    - [ ] GZip vs Brotli
+
+- [x] Trabalhando com files
+  - [x] Streams - File, memory, network
+  - [x] GZip vs Brotli
 - [ ] ASCII, ANSII, ISO e os UTC e UTF
+- [ ] Streams
 - [ ] Como funciona um Hashet de objetos, o que é um hash code, como funciona o GetHashCode e Equals
 - [ ] Serializando XML, usando [XMLAttribute]
 - [ ] Serializando Json, JsonIgnore, JsonInclude
@@ -109,7 +111,7 @@
 - [ ] Grpc
 - [ ] OData
 - [ ] Avalonia
-- [ ] Directoru.package.props e atualizar mensalmente - Central Package Management
+- [x] Directoru.package.props e atualizar mensalmente - Central Package Management
 - [ ] Has default value e has default value swl
 - [ ] Hsts
 - [ ] UseDefaultFiles, MapStaticAssets e MapStaticFiles
@@ -136,7 +138,7 @@
 - [ ] Bcnf
 - [ ] Package Source Mapping
 - [ ] Warning as Error
-- [ ] Nugget.config e Directory.Packages.props
+- [ ] ~~Nugget.config e Directory.Packages.props~~
 - [ ] .MCP.json do learn microsoft
 - [ ] How is this website so fast? p.66
 - [ ] WCF
