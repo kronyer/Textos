@@ -69,10 +69,10 @@
   - [ ] Dictionary ou hashset?
 - [ ] Sets
   - [ ] Metodos de set
-- [ ] Stack e Queue e priority queue
-- [ ] Sorted collections
+- [X] Stack e Queue e priority queue
+- [X] Sorted collections
 - [ ] AsReadOnly
-- [ ] ToImmutableDicitionary, ToImmutableList, etc
+- [X] ToImmutableDicitionary, ToImmutableList, etc
 - [ ] Frozen collections - FrozenDictionary
 - [ ] Spread operator (..)
 - [ ] IEnumerable como argumento de métodos é lento, usar List
