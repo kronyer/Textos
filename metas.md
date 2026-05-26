@@ -56,19 +56,19 @@
 - [ ] Quadrado não deve herdar de shape, mas sim de retangulo
 - [ ] ~~Native sized int~~
 - [ ] System runtime dll nao tem types, so types forward
-- [ ] FDD FDE e self contained apps
-  - [ ] Single file app sem self contained: `dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained false`
-- [ ] Trim no publish
-- [ ] Build props use artifacts
+- [x] FDD FDE e self contained apps
+  - [x] Single file app sem self contained: `dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained false`
+- [x] Trim no publish
+- [x] Build props use artifacts
 - [ ] Native aot
 - [ ] Method interceptors e a geração de migrations (?)
 - [ ] IList<T> [DefaultMember]
 - [ ] Arrays são melhores que listas, usar quando o tamanho é conhecido, ou converter para array depois de operar com a lista
 - [ ] Dictionary
   - [ ] KeyValue<TKey, TValue> e KeyValuePair<TKey, TValue>?? 
-  - [ ] Dictionary ou hashset?
-- [ ] Sets
-  - [ ] Metodos de set
+  - [x] Dictionary ou hashset?
+- [x] Sets
+  - [x] Metodos de set
 - [X] Stack e Queue e priority queue
 - [X] Sorted collections
 - [x] AsReadOnly
@@ -162,7 +162,9 @@
 - [ ] IAuthorization, IResource, IAction, IException, filters
 - [ ] Auth0
 - [ ] Como funciona um CDN e como usar
-
+- [ ] construtor estático.
+- [ ] Gherkin
+- [ ] ndepend
 # Db
 - [ ] cursor, exec sql em c puro
 - [ ] ODMS
@@ -172,6 +174,20 @@
 - [ ] 3 formas de normalização
 - [ ] Superkey e primary key
 - [ ] Atributos primos 
+
+# Data Intensive Applications
+- [ ] Network Model?
+- [ ] CODASYL
+- [ ] Property graph - Cypher
+- [ ] With Recursive sql
+- [ ] Triple-Stores SPARQL | Turtle Language, RDF data model and semantic web
+- [ ] Intro to Prolog and Datalog
+- [ ] Document vs Graph vs Relational
+- [ ] MapReduce
+
+# DDD
+- [ ] Transaction script
+- [ ] Padrão ativo (nao é a estrutura active record, mas sim ao padrão de design)
 
 
 # Calc

@@ -75,52 +75,43 @@ myObject.Print(); // Chama o método da classe MyClass, não o extension method
 
 Por baixo dos  panos, os extension methods são apenas métodos estáticos que recebem o tipo estendido como primeiro parâmetro. Ou seja, quando chamamos `myString.IsNullOrEmpty()`, na verdade estamos chamando `StringExtensions.IsNullOrEmpty(myString)`.
 
-O novo .net traz uma mudança para como os extension methods são implementados, permitindo que eles sejam mais flexíveis e poderosos.
+O C# 14 traz uma mudança para como os extension members são implementados, permitindo que sejam mais flexíveis e poderosos. A feature se chama Extension Members e introduz uma nova sintaxe com blocos extension dentro de uma classe estática.
 
-Agora, no .net 10, existem os `Extension Types`, que nos permite trabalhar com `get`, memberos estáticos de extensao e indexadores
+### Propriedades e indexadores de extensão
 
-### Usando indexadores
-
-Atualmente, se você quer calcular o PrecoComImposto de um produto de uma biblioteca de terceiros, você é obrigado a criar um método: produto.GetPrecoComImposto(). Com Extension Types, você pode criar uma propriedade:
+Antigamente, se você quisesse calcular o PrecoComImposto de um produto de uma biblioteca de terceiros, seria obrigado a criar um método: produto.GetPrecoComImposto(). Com Extension Members, você pode criar uma propriedade:
 
 ```csharp
-public implicit extension ProductExtensions for Product
+public static class ProductExtensions
 {
-    // Agora parece um campo real da classe!
-    public decimal PrecoComImposto => this.Price * 1.2M;
+    extension(Product p)
+    {
+        // Agora parece um campo real da classe!
+        public decimal PrecoComImposto => p.Price * 1.2M;
 
-    // Você também pode adicionar indexadores
-    public string this[int index] => $"Acessando info extra {index}";
+        // Você também pode adicionar indexadores
+        public string this[int index] => $"Acessando info extra {index}";
+    }
 }
 ```
 
 ### Membros estáticos de extensão
 
-Antigamente, os extension methods só podiam ser métodos de instância. Com Extension Types, agora é possível adicionar membros estáticos de extensão. Por exemplo:
+Antigamente, os extension methods só podiam ser chamados em instâncias. Com Extension Members, agora é possível adicionar membros estáticos. O bloco extension sem receiver nomeado indica que os membros pertencem ao tipo, não a uma instância:
 
 ```csharp
-public implicit extension JsonExtensions for string
+public static class JsonExtensions
 {
-    // Adicionando um método estático à classe string!
-    public static string FromJson(object obj) => JsonSerializer.Serialize(obj);
+    extension(string) // sem nome = membros estáticos
+    {
+        // Adicionando um método estático à classe string!
+        public static string FromJson(object obj) => JsonSerializer.Serialize(obj);
+    }
 }
 
 // Uso:
-string meuJson = string.FromJson(meuObjeto); 
+string meuJson = string.FromJson(meuObjeto);
 ```
-
-### Usando get
-
-Com Extension Types, agora é possível usar a sintaxe de propriedade para acessar membros de extensão. Por exemplo:
-
-```csharp
-public implicit extension DateTimeExtensions for DateTime
-{
-    // Agora podemos acessar a propriedade como se fosse um membro real da classe DateTime!
-    public int Year => this.Year;
-}
-```
-
 
 ## Fluent interfaces
 
@@ -129,7 +120,7 @@ Extension methods são perfeitos para criar fluent interfaces, onde você pode e
 ```csharp
 public static class StringBuilderExtensions
 {
-    public static StringBuilder AppendLineWithPrefix(this StringBuilder sb, string prefix, string line
+    public static StringBuilder AppendLineWithPrefix(this StringBuilder sb, string prefix, string line)
     {
         return sb.AppendLine($"{prefix}: {line}");
     }
@@ -141,6 +132,3 @@ sb.AppendLineWithPrefix("INFO", "Iniciando o processo")
   .AppendLineWithPrefix("DEBUG", "Processo em andamento")
   .AppendLineWithPrefix("ERROR", "Ocorreu um erro");
 ```
-
-## Como fica no CIL?
-
