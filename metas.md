@@ -60,7 +60,7 @@
   - [x] Single file app sem self contained: `dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained false`
 - [x] Trim no publish
 - [x] Build props use artifacts
-- [ ] Native aot
+- [X] Native aot
 - [ ] Method interceptors e a geração de migrations (?)
 - [ ] IList<T> [DefaultMember]
 - [ ] Arrays são melhores que listas, usar quando o tamanho é conhecido, ou converter para array depois de operar com a lista
@@ -90,7 +90,7 @@
   - [x] GZip vs Brotli
 - [ ] ASCII, ANSII, ISO e os UTC e UTF
 - [ ] Streams
-- [ ] Como funciona um Hashet de objetos, o que é um hash code, como funciona o GetHashCode e Equals
+- [x] Como funciona um HasCode de objetos, o que é um hash code, como funciona o GetHashCode e Equals
 - [ ] Serializando XML, usando [XMLAttribute]
 - [ ] Serializando Json, JsonIgnore, JsonInclude
 - [ ] bypass de private ao passar por referencia no construtor, isso é um problema?
@@ -163,8 +163,9 @@
 - [ ] Auth0
 - [ ] Como funciona um CDN e como usar
 - [ ] construtor estático.
-- [ ] Gherkin
+- [ ] Gherkin e specflow
 - [ ] ndepend
+- [ ] Unsafe c#
 # Db
 - [ ] cursor, exec sql em c puro
 - [ ] ODMS
@@ -184,6 +185,7 @@
 - [ ] Intro to Prolog and Datalog
 - [ ] Document vs Graph vs Relational
 - [ ] MapReduce
+- [ ] Coding a database
 
 # DDD
 - [ ] Transaction script

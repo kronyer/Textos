@@ -38,6 +38,14 @@ else
 
 Por baixo dos panos, o "motor" de um `HashSet<T>` é o mesmo de um `Dictionary<TKey, TValue>`, permitindo consultas O(1), no entanto, usamos `HashSet<T>` quando queremos apenas armazenar elementos únicos sem a necessidade de associar um valor a cada chave, enquanto `Dictionary<TKey, TValue>` é usado quando precisamos mapear chaves para valores.
 
+HashSet é um dictionary que so se importa com a key. Recebe "Hash" pelo motor HashTable:
+
+* No Dictionary: O Hash é calculado a partir de um dado (a Chave), para descobrir em qual gaveta guardar outro dado (o Valor).
+
+* No HashSet: O Hash é calculado a partir do próprio elemento, para descobrir em qual gaveta guardar o próprio elemento.
+
+p.s: Não confundir com HashMap, que é uma sinônimo de Dictionary em outras linguagens, como Java.
+
 ### SortedSet
 
 O `SortedSet<T>` é uma implementação de set que mantém os elementos em ordem crescente. Ele utiliza uma árvore binária balanceada para armazenar os elementos, o que permite operações de inserção, remoção e verificação de existência em tempo logarítmico, O(log n).
