@@ -1,0 +1,51 @@
+ops@prd-app-br-01:/srv/apps/traefik$ cat traefik.yml 
+# =============================================================================
+# Traefik v3 - Configuração Estática
+# =============================================================================
+
+# API e Dashboard
+api:
+  dashboard: true # Habilita o painel dashboard
+  insecure: true # Exigirá autenticação (configurada depois)
+
+ping: {}
+
+# Logging
+log:
+  level: INFO
+  filePath: /var/log/traefik/traefik.log
+
+accessLog:
+  filePath: /var/log/traefik/access.log
+  bufferingSize: 100
+
+# Entrypoints
+entryPoints:
+  traefik:
+    address: ":8080"
+
+  web:
+    address: ":80"
+    # Redirecionamento Global HTTP -> HTTPS para todos os services (atuais e futuros)
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
+          permanent: true
+
+  websecure:
+    address: ":443"
+
+# Providers
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false # Só expõe service que tiver label explícita (manter)
+    network: proxy # Rede Docker criada padrão para roteamento externo
+    watch: true
+    allowEmptyServices: true
+  file:
+    directory: "/etc/traefik/dynamic" # onde residem certificados (CloudFlare Origin TLS)
+    watch: true
+ops@prd-app-br-01:/srv/apps/traefik$ 

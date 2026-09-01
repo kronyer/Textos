@@ -1,0 +1,41 @@
+services:
+  traefik:
+    image: traefik:v3.7
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Configuração estática
+      - /srv/apps/traefik/traefik.yml:/traefik.yml:ro
+      # Configuração dinâmica
+      - /srv/apps/traefik/dynamic:/etc/traefik/dynamic:ro
+      # Socket do Docker (para descobrir containers)
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # Certificados Cloudflare Origin
+      - /etc/ssl/cloudflare:/etc/ssl/cloudflare:ro
+      # Logs
+      - /srv/logs/traefik:/var/log/traefik
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`traefik.escansao.com.br`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
+      - "traefik.http.routers.dashboard.entrypoints=websecure"
+      - "traefik.http.routers.dashboard.tls=true"
+      - "traefik.http.routers.dashboard.service=api@internal"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.dashboard.middlewares=vpn-whitelist@file,security-headers@file"
+    healthcheck:
+      test: ["CMD", "traefik", "healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  proxy:
+    external: true

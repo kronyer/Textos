@@ -1,0 +1,5 @@
+- [x] Domain Events
+- [ ] Anticorruption Layer
+- [ ] Dbc (design by contract) - Pré e pos condições e invariantes
+- [ ] Bounded context
+- [ ] Dominios subdominios, nucleo segregado, subdominio generico vs mecanismo coesa, estrutura em larga escala
